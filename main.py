@@ -47,6 +47,10 @@ def categorize_urls(urls):
             
         elif ".m3u8" in url:
             videos.append((name, url))
+
+        elif "pdf*" in url:
+            new_url = f"https://dragoapi.vercel.app/pdf/{url}"
+            pdfs.append((name, new_url))
         elif "pdf" in url:
             pdfs.append((name, url))
         else:
