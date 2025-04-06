@@ -53,6 +53,11 @@ def categorize_urls(urls):
             new_url = f"https://player.muftukmall.site/?id={vid_id}"
             videos.append((name, new_url))
 
+        elif "d1d34p8vz63oiq.cloudfront.net/" in url:
+            vid_id = url.split("/")[-2]
+            new_url = f"https://anonymouspwplayer-b99f57957198.herokuapp.com/pw?url={video_url}?token={your_working_token}"
+            videos.append((name, new_url))
+
         elif "youtube.com/embed" in url:
             yt_id = url.split("/")[-1]
             new_url = f"https://www.youtube.com/watch?v={yt_id}"
