@@ -34,12 +34,12 @@ def categorize_urls(urls):
     for name, url in urls:
         new_url = url
         if "media-cdn.classplusapp.com/" in url or "cpvod.testbook" in url:
-            new_url = f"https://dragoapi.vercel.app/video/{url}"
+            new_url = f"https://api.extractor.workers.dev/player?url={url}"
             videos.append((name, new_url))
             
         elif "media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/" in url or "media-cdn.classplusapp.com/1681/" in url or "media-cdn.classplusapp.com/tencent/" in url:
             vid_id = url.split("/")[-2]
-            new_url = f"https://api.extractor.workers.dev/player?url={url}"
+            new_url = f"https://dragoapi.vercel.app/video/{url}"
             videos.append((name, new_url))
 
         elif "akamaized.net/" in url or "1942403233.rsc.cdn77.org/" in url:
