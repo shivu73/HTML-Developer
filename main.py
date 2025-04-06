@@ -42,7 +42,12 @@ def categorize_urls(urls):
             new_url = f"https://api.extractor.workers.dev/player?url={url}"
             videos.append((name, new_url))
 
-        
+        elif "akamaized.net/" in url or "1942403233.rsc.cdn77.org/" in url:
+            vid_id = url.split("/")[-2]
+            new_url = f"https://nirvana-player-v1-7c783bf0be4f.herokuapp.com/?videoUrl={url}"
+            videos.append((name, new_url))
+
+
         elif "/master.mpd" in url:
             vid_id = url.split("/")[-2]
             new_url = f"https://player.muftukmall.site/?id={vid_id}"
