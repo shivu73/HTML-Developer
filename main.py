@@ -53,6 +53,11 @@ def categorize_urls(urls):
             new_url = f"https://player.muftukmall.site/?id={vid_id}"
             videos.append((name, new_url))
 
+        elif ".zip" in url:
+            vid_id = url.split("/")[-2]
+            new_url = f"https://video.pablocoder.eu.org/appx-zip?url={url}"
+            videos.append((name, new_url))
+
         elif "d1d34p8vz63oiq.cloudfront.net/" in url:
             vid_id = url.split("/")[-2]
             new_url = f"https://anonymouspwplayer-b99f57957198.herokuapp.com/pw?url={video_url}?token={your_working_token}"
