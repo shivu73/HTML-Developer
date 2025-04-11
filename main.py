@@ -44,7 +44,7 @@ def categorize_urls(urls):
 
         elif "akamaized.net/" in url or "1942403233.rsc.cdn77.org/" in url:
             vid_id = url.split("/")[-2]
-            new_url = f"https://nirvana-player-v1-7c783bf0be4f.herokuapp.com/?videoUrl={url}"
+            new_url = f"https://www.khanglobalstudies.com/player?src={url}"
             videos.append((name, new_url))
 
 
