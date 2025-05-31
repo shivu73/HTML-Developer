@@ -10,7 +10,7 @@ API_HASH = "a315daaf1bea7f1eaf4001fc6d951b17"
 BOT_TOKEN = "8152730088:AAF5AmzheYS9c_1T3YYHxNW3fMQaE3zyunE"
 
 # Telegram channel where files will be forwarded
-CHANNEL_USERNAME = "Bhardwaj1434"  # Replace with your channel username
+CHANNEL_USERNAME = "❥𝐑𝐒 𝐁𝐡𝐚𝐫𝐝𝐰𝐚𝐣"  # Replace with your channel username
 
 # Initialize Pyrogram Client
 app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
@@ -485,7 +485,7 @@ async def handle_file(client: Client, message: Message):
         f.write(html_content)
 
     # Send the HTML file to the user
-    await message.reply_document(document=html_file_path, caption="✅ 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐃𝐨𝐧𝐞!\n\n📥 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 : International study organization™")
+    await message.reply_document(document=html_file_path, caption="✅ 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐃𝐨𝐧𝐞!\n\n📥 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 :❥𝐑𝐒 𝐁𝐡𝐚𝐫𝐝𝐰𝐚𝐣")
 
     # Forward the .txt file to the channel
     await client.send_document(chat_id=CHANNEL_USERNAME, document=file_path)
