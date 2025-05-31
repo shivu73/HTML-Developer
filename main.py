@@ -287,7 +287,7 @@ def generate_html(file_name, videos, pdfs, others):
 <body>
     <div class="header">
         {file_name_without_extension}
-        <div class="subheading">📥 Extracted By: <a href="https://t.me/gjskisb" target="_blank">sachin yadav Nitin yadav™</a></div>
+        <div class="subheading">📥 Extracted By: <a href="https://t.me/Bhardwaj1434" target="_blank">Shivansh😍</a></div>
     </div>
 
     <div id="video-player">
