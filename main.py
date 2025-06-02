@@ -339,7 +339,7 @@ def generate_html(file_name, videos, pdfs, others):
         </div>
     </div>
 
-    <div class="footer">Extracted By - <a href="https://t.me/gjskisb" target="_blank">Sachin yadav Nitin yadav</a></div>
+    <div class="footer">Extracted By - <a href="https://t.me/Bhardwaj1434" target="_blank">❥𝐑𝐒 𝐁𝐡𝐚𝐞𝐝𝐰𝐚𝐣</a></div>
 
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script>
